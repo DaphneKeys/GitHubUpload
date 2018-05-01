@@ -10,11 +10,11 @@ for guesses in range(1,7): #guess 6 times
 
     if secretnumber < number:
         print('Too high')
-        if number >= 21:
+        if number >= 21: #if number is more than 20
             print('I am thinking between 1 to 20')
     elif secretnumber > number:
         print('Too low')
-        if number <= -1:
+        if number <= -1: #if number is negative
             print('No negative number. I am thinking between 1 to 20')
     else:
         print('you guessed right. I was thinking of ' + str(secretnumber))
